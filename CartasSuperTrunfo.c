@@ -41,25 +41,24 @@ scanf("%s", Cidade2);
 printf("\n");
 
 printf("Informe o número da populacional da cidade 1: \n");
-scanf("%.f", &Populacao1);
+scanf("%f", &Populacao1);
 printf("\n");
 printf("Informe o número da populacional da cidade 2: \n");
-scanf("%.f", &Populacao2);
+scanf("%f", &Populacao2);
 printf("\n");
-
 
 printf("Informe a área em km² do estado 1: \n");
-scanf("%.f", &Area1);
+scanf("%f", &Area1);
 printf("\n");
 printf("Informe a área em km² do estado 2: \n");
-scanf("%.f", &Area2);
+scanf("%f", &Area2);
 printf("\n");
 
 printf("Informe o PIB do estado1 em R$: \n");
-scanf("R$%.f", &PIB1);
+scanf("R$%f", &PIB1);
 printf("\n");
 printf("Informe o PIB do estado2 em R$: \n");
-scanf("R$%.f", &PIB2);
+scanf("R$%f", &PIB2);
 printf("\n");
 
 printf("Informe a quantidade de pontos turísticos1: \n");
