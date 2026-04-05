@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int maim (){
+int main (){
 
 printf("\n-------- Carta 1 --------\n");
 char Inicial_do_Estado1;
@@ -73,7 +73,5 @@ printf("\n");
 printf("\n------- Fim das cartas-------\n");
 
 return 0;
-
-
 
 }
