@@ -69,7 +69,8 @@ scanf("%d", &Pontos_Turisticos2);
 printf("\n");
 
 
-printf("\n------- Fim das cartas-------\n");
+printf("\n------- Fim das cartas-------");
+printf("\n---\n");
 
 return 0;
 
