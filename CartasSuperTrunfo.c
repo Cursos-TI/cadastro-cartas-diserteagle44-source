@@ -55,10 +55,10 @@ scanf("%f", &Area2);
 printf("\n");
 
 printf("Informe o PIB do estado1 em R$: \n");
-scanf("R$%f", &PIB1);
+scanf("%f", &PIB1);
 printf("\n");
 printf("Informe o PIB do estado2 em R$: \n");
-scanf("R$%f", &PIB2);
+scanf("%f", &PIB2);
 printf("\n");
 
 printf("Informe a quantidade de pontos turísticos1: \n");
