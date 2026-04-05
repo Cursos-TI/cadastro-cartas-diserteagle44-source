@@ -2,7 +2,7 @@
 
 int main (){
 
-printf("\n-------- Carta 1 --------\n");
+printf("\n-------- Cartas 1 e 2 --------\n");
 char Inicial_do_Estado1;
 char Codigo_da_carta1 [20];
 char Cidade1 [30];
