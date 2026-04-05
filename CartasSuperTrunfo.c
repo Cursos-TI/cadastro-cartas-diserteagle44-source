@@ -40,10 +40,10 @@ printf("Nome da cidade2: \n");
 scanf("%s", Cidade2);
 printf("\n");
 
-printf("Informe o número da populacional da cidade 1: \n");
+printf("Informe o número populacional da cidade 1: \n");
 scanf("%f", &Populacao1);
 printf("\n");
-printf("Informe o número da populacional da cidade 2: \n");
+printf("Informe o número populacional da cidade 2: \n");
 scanf("%f", &Populacao2);
 printf("\n");
 
