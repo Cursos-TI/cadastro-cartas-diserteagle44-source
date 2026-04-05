@@ -70,7 +70,7 @@ printf("\n");
 
 
 printf("\n------- Fim das cartas-------");
-printf("\n---\n");
+printf("\n");
 
 return 0;
 
