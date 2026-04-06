@@ -23,6 +23,8 @@ int Pontos_Turisticos2;
 float Densidade_populacional2;
 float PIB_per_capita2;
 
+
+//Entradas
 printf("Inicial do estado1: \n");
 scanf(" %c", &Inicial_do_Estado1);
 printf("\n");
@@ -44,39 +46,42 @@ printf("Nome da cidade2: \n");
 scanf("%s", Cidade2);
 printf("\n");
 
-printf("Informe o número populacional da cidade 1: \n");
+printf("População da cidade 1: \n");
 scanf("%f", &Populacao1);
 printf("\n");
-printf("Informe o número populacional da cidade 2: \n");
+printf("População da cidade 2: \n");
 scanf("%f", &Populacao2);
 printf("\n");
 
-printf("Informe a área em km² do estado 1: \n");
+printf("Área em km² do estado 1: \n");
 scanf("%f", &Area1);
 printf("\n");
-printf("Informe a área em km² do estado 2: \n");
+printf("Área em km² do estado 2: \n");
 scanf("%f", &Area2);
 printf("\n");
 
-printf("Informe o PIB do estado1 em R$: \n");
+printf("PIB do estado1: \n");
 scanf("%f", &PIB1);
 printf("\n");
-printf("Informe o PIB do estado2 em R$: \n");
+printf("PIB do estado2: \n");
 scanf("%f", &PIB2);
 printf("\n");
 
-printf("Informe a quantidade de pontos turísticos1: \n");
+printf("Quantidade de pontos turísticos1: \n");
 scanf("%d", &Pontos_Turisticos1);
 printf("\n");
-printf("Informe a quantidade de pontos turísticos2: \n");
+printf("Quantidade de pontos turísticos2: \n");
 scanf("%d", &Pontos_Turisticos2);
 printf("\n");
 
+
+//Cálculo
 Densidade_populacional1 = Populacao1 / Area1;
 printf("Densidade populacional Estado 1: %f hab/km²\n", Densidade_populacional1);
 Densidade_populacional2 = Populacao2 / Area2;
 printf("Densidade populacional Estado 2: %f hab/Km²\n", Densidade_populacional2);
 
+//Cálculo
 PIB_per_capita1 = PIB1 / Populacao1;
 printf("PIB per capita: R$ %.2f\n", PIB_per_capita1);
 PIB_per_capita2 = PIB2 / Populacao2;
