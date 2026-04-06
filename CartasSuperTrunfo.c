@@ -78,9 +78,9 @@ Densidade_populacional2 = Populacao2 / Area2;
 printf("Densidade populacional Estado 2: %f hab/Km²\n", Densidade_populacional2);
 
 PIB_per_capita1 = PIB1 / Populacao1;
-printf("PIB per capita: %.2f\n", PIB_per_capita1);
+printf("PIB per capita: R$ %.2f\n", PIB_per_capita1);
 PIB_per_capita2 = PIB2 / Populacao2;
-printf("PIB per capita: %.2f\n", PIB_per_capita2);
+printf("PIB per capita: R$ %.2f\n", PIB_per_capita2);
 
 printf("\n------- Fim das cartas-------");
 printf("\n\n");
