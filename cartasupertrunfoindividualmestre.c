@@ -44,13 +44,13 @@ printf("\n");
 
 //Cálculo
 Densidade_populacional = Populacao / Area;
-printf("Densidade populacional Estado: %f hab/km²\n", Densidade_populacional);
+printf("Densidade populacional do Estado: %f hab/km²\n\n", Densidade_populacional);
 
 //Cálculo
 PIB_per_capita = PIB / Populacao;
 printf("PIB per capita: R$ %.2f\n", PIB_per_capita);
 
-printf("\n------- Fim das cartas-------");
+printf("\n------- Fim da carta-------");
 printf("\n\n");
 
 return 0;
