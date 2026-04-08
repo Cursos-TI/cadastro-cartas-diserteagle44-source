@@ -6,7 +6,7 @@ printf("\n\n-------- Carta Mestre--------\n\n");
 char Inicial_do_Estado;
 char Codigo_da_carta [20];
 char Cidade [30];
-float Populacao;
+unsigned long int Populacao;
 float Area;
 float PIB;
 int Pontos_Turisticos;
@@ -27,7 +27,7 @@ scanf("%s", Cidade);
 printf("\n");
 
 printf("População da cidade: \n");
-scanf("%f", &Populacao);
+scanf("%ld", &Populacao);
 printf("\n");
 
 printf("Área em km² do estado: \n");
