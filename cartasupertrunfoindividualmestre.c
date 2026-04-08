@@ -10,7 +10,7 @@ unsigned long int Populacao;
 float Area;
 float PIB;
 int Pontos_Turisticos;
-float Densidade_Populacional;
+float Densidade_populacional;
 float PIB_per_capita;
 float Super_Poder;
 
@@ -43,13 +43,13 @@ printf("Quantidade de pontos turísticos: \n");
 scanf("%d", &Pontos_Turisticos);
 printf("\n");
 
+
 printf("Densidade Populacional: \n");
 scanf("%f", &Densidade_Populacional);
 printf("\n");
 
-//Cálculo
 Densidade_Populacional = Populacao / Area;
-printf("Densidade populacional do Estado: %f hab/km²\n\n", Densidade_Populacional);
+printf("Densidade populacional do Estado: %f hab/km²\n", Densidade_Populacional);
 
 //Cálculo
 PIB_per_capita = PIB / Populacao;
