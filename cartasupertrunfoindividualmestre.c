@@ -100,16 +100,20 @@ printf("Área: Carta %d venceu (%d)\n", (Area > Area2) ? 1 : 2, (Area > Area2));
 printf("PIB: Carta %d venceu (%d)\n", (PIB > PIB2) ? 1 : 2, (PIB > PIB2));
 
 // Pontos turísticos
-printf("Pontos Turísticos: Carta %d venceu (%d)\n", (Pontos_Turisticos > Pontos_Turisticos2) ? 1 : 2, (Pontos_Turisticos > Pontos_Turisticos2));
+printf("Pontos Turísticos: Carta %d venceu (%d)\n", 
+    (Pontos_Turisticos > Pontos_Turisticos2) ? 1 : 2, (Pontos_Turisticos > Pontos_Turisticos2));
 
 // Densidade (MENOR vence)
-printf("Densidade Populacional: Carta %d venceu (%d)\n", (Densidade_Populacional < Densidade_Populacional2) ? 1 : 2, (Densidade_Populacional < Densidade_Populacional2));
+printf("Densidade Populacional: Carta %d venceu (%d)\n", 
+    (Densidade_Populacional < Densidade_Populacional2) ? 1 : 2, (Densidade_Populacional < Densidade_Populacional2));
 
 // PIB per capita
-printf("PIB per Capita: Carta %d venceu (%d)\n", (PIB_per_capita > PIB_per_capita2) ? 1 : 2, (PIB_per_capita > PIB_per_capita2));
+printf("PIB per Capita: Carta %d venceu (%d)\n", 
+    (PIB_per_capita > PIB_per_capita2) ? 1 : 2, (PIB_per_capita > PIB_per_capita2));
 
 // Super Poder
-printf("Super Poder: Carta %d venceu (%d)\n", (Super_Poder > Super_Poder2) ? 1 : 2, (Super_Poder > Super_Poder2));
+printf("Super Poder: Carta %d venceu (%d)\n", 
+    (Super_Poder > Super_Poder2) ? 1 : 2, (Super_Poder > Super_Poder2));
 
 printf("\n------- Fim -------\n");
 
