@@ -3,6 +3,8 @@
 int main (){
 
 printf("\n\n-------- Carta Mestre - Duas em uma--------\n\n");
+
+// Carta 1
 char Inicial_do_Estado;
 char Codigo_da_carta [20];
 char Cidade [30];
@@ -13,7 +15,8 @@ int Pontos_Turisticos;
 float Densidade_Populacional;
 float PIB_per_capita;
 float Super_Poder;
-printf("\n");
+
+// Carta 2
 char Inicial_do_Estado2;
 char Codigo_da_carta2 [20];
 char Cidade2 [30];
@@ -25,100 +28,90 @@ float Densidade_Populacional2;
 float PIB_per_capita2;
 float Super_Poder2;
 
+// ================= ENTRADAS =================
 
-//Entradas
-printf("Inicial do estado: \n");
+// Carta 1
+printf("Inicial do estado 1: \n");
 scanf(" %c", &Inicial_do_Estado);
-printf("\n");
 
-printf("Inicial do estado2: \n");
-scanf(" %c", &Inicial_do_Estado2);
-printf("\n");
-
-printf("Código do Estado: \n");
+printf("Código do Estado 1: \n");
 scanf("%s", Codigo_da_carta);
-printf("\n");
 
-printf("Código do Estado2: \n");
-scanf("%s", Codigo_da_carta2);
-printf("\n");
-
-printf("Nome da cidade: \n");
+printf("Nome da cidade 1: \n");
 scanf("%s", Cidade);
-printf("\n");
 
-printf("Nome da cidade2: \n");
-scanf("%s", Cidade2);
-printf("\n");
-
-
-printf("População da cidade: \n");
+printf("População da cidade 1: \n");
 scanf("%lu", &Populacao);
-printf("\n");
 
-printf("População da cidade2: \n");
-scanf("%lu", &Populacao2);
-printf("\n");
-
-printf("Área em km² do estado: \n");
+printf("Área em km² do estado 1: \n");
 scanf("%f", &Area);
-printf("\n");
 
-printf("Área em km² do estado2: \n");
-scanf("%f", &Area2);
-printf("\n");
-
-printf("PIB do estado: \n");
+printf("PIB do estado 1: \n");
 scanf("%f", &PIB);
-printf("\n");
 
-printf("PIB do estado2: \n");
-scanf("%f", &PIB2);
-printf("\n");
-
-printf("Quantidade de pontos turísticos: \n");
+printf("Quantidade de pontos turísticos 1: \n");
 scanf("%d", &Pontos_Turisticos);
-printf("\n");
 
-printf("Quantidade de pontos turísticos2: \n");
+// Carta 2
+printf("\nInicial do estado 2: \n");
+scanf(" %c", &Inicial_do_Estado2);
+
+printf("Código do Estado 2: \n");
+scanf("%s", Codigo_da_carta2);
+
+printf("Nome da cidade 2: \n");
+scanf("%s", Cidade2);
+
+printf("População da cidade 2: \n");
+scanf("%lu", &Populacao2);
+
+printf("Área em km² do estado 2: \n");
+scanf("%f", &Area2);
+
+printf("PIB do estado 2: \n");
+scanf("%f", &PIB2);
+
+printf("Quantidade de pontos turísticos 2: \n");
 scanf("%d", &Pontos_Turisticos2);
-printf("\n");
 
+// ================= CÁLCULOS =================
+
+// Carta 1
 Densidade_Populacional = (float) Populacao / Area;
-printf("Densidade populacional do Estado: %f hab/km²\n", Densidade_Populacional);
-printf("\n");
-
-Densidade_Populacional2 = (float) Populacao2 / Area2;
-printf("Densidade populacional do Estado: %f hab/km²\n", Densidade_Populacional2);
-printf("\n");
-
 PIB_per_capita = PIB / Populacao;
-printf("PIB per capita: R$ %.2f\n", PIB_per_capita);
-printf("\n");
+Super_Poder = (float)Populacao + Area + PIB + (float)Pontos_Turisticos + PIB_per_capita + (1.0 / Densidade_Populacional);
 
-PIB_per_capita = PIB2 / Populacao2;
-printf("PIB per capita: R$ %.2f\n", PIB_per_capita2);
-printf("\n");
+// Carta 2
+Densidade_Populacional2 = (float) Populacao2 / Area2;
+PIB_per_capita2 = PIB2 / Populacao2;
+Super_Poder2 = (float)Populacao2 + Area2 + PIB2 + (float)Pontos_Turisticos2 + PIB_per_capita2 + (1.0 / Densidade_Populacional2);
 
-Super_Poder = (float) Populacao + Area + PIB + (float) Pontos_Turisticos + PIB_per_capita + ( 1.0 / Densidade_Populacional);
-printf("\n");
+// ================= COMPARAÇÕES =================
 
-Super_Poder = (float) Populacao + Area + PIB + (float) Pontos_Turisticos + PIB_per_capita + ( 1.0 / Densidade_Populacional);
-printf("\n");
+printf("\n--- Comparação de Cartas ---\n");
 
-printf("Super Poder: %.2f\n", Super_Poder);
-printf("\n");
+// População
+printf("População: Carta %d venceu (%d)\n", (Populacao > Populacao2) ? 1 : 2, (Populacao > Populacao2));
 
-if(Populacao > Populacao2){
-    printf("Cidade venceu!");
-    else(Populacao < Populacao2){
-        printf("Cidade perdeu!");
-    }
-}
+// Área
+printf("Área: Carta %d venceu (%d)\n", (Area > Area2) ? 1 : 2, (Area > Area2));
 
-printf("\n------- Fim da carta-------");
-printf("\n\n");
+// PIB
+printf("PIB: Carta %d venceu (%d)\n", (PIB > PIB2) ? 1 : 2, (PIB > PIB2));
+
+// Pontos turísticos
+printf("Pontos Turísticos: Carta %d venceu (%d)\n", (Pontos_Turisticos > Pontos_Turisticos2) ? 1 : 2, (Pontos_Turisticos > Pontos_Turisticos2));
+
+// Densidade (MENOR vence)
+printf("Densidade Populacional: Carta %d venceu (%d)\n", (Densidade_Populacional < Densidade_Populacional2) ? 1 : 2, (Densidade_Populacional < Densidade_Populacional2));
+
+// PIB per capita
+printf("PIB per Capita: Carta %d venceu (%d)\n", (PIB_per_capita > PIB_per_capita2) ? 1 : 2, (PIB_per_capita > PIB_per_capita2));
+
+// Super Poder
+printf("Super Poder: Carta %d venceu (%d)\n", (Super_Poder > Super_Poder2) ? 1 : 2, (Super_Poder > Super_Poder2));
+
+printf("\n------- Fim -------\n");
 
 return 0;
-
 }
